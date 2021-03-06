@@ -1,10 +1,12 @@
-import React from 'react';
+import React  from 'react';
+
 
 const CatagoryDetail = (props) => {
-    const {count} = props;
+    const {name} = props.product;
     return (
         <div>
-            <h4>This is category detail:{count} </h4>
+            <h4>This is category detail: </h4>
+            <p>Selected product: {name} </p>
         </div>
     );
 };

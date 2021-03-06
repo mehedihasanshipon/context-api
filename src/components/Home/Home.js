@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { CategoryContext } from '../../App';
 import Catagory from '../Catagory/Catagory';
 
-const Home = (props) => {
-    const {count} = props;
+const Home = () => {
+    const count =  useContext(CategoryContext);
     const style = {
         border : '1px solid red'
     }
